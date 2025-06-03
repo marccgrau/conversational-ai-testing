@@ -1,4 +1,13 @@
 [theme]
-primaryColor = "rgba(128, 0, 128, 0.05)"
-backgroundColor = "#F0F0F0"
-secondaryBackgroundColor = "rgba(021, 013, 084, 0.1)"
+primaryColor = "#007D52"                     # HSG Green
+backgroundColor = "#FFFFFF"                  # Clean white background
+secondaryBackgroundColor = "#F5F5F5"         # Light gray panels for contrast
+textColor = "#000000"                        # Standard black text
+font = "sans serif"                          # Clean and professional font
+base = "light"
+
+[server]
+headless = true
+
+[layout]
+wide = true
