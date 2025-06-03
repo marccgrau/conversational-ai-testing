@@ -13,3 +13,6 @@ __pycache__/
 .venv/
 config/config_anthropic.yml
 config/config_airline_gemini.yml
+config/config_education.yml
+config/config_retail.yml
+**llm_env.yml**

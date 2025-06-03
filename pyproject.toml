@@ -1,0 +1,21 @@
+[project]
+name = "conversational-ai-testing"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic[vertex]==0.42.0",
+    "google-cloud-aiplatform==1.75.0",
+    "langchain-google-vertexai==2.0.9",
+    "langchain==0.3.7",
+    "langchain-core==0.3.15",
+    "langchain-openai==0.2.5",
+    "langgraph==0.2.44",
+    "pandas==2.2.3",
+    "langchain-community==0.3.5",
+    "networkx==3.2.1",
+    "streamlit==1.39.0",
+    "plotly==5.24.1",
+    "langchain-google-genai==2.0.7",
+]
