@@ -1,8 +1,8 @@
 environment:
     prompt_path: './examples/customer_service/input/call_agent_prompt.md'
-    tools_file: ''
-    database_folder: ''
-    database_validators: ''
+    tools_file: './examples/customer_service/input/tools/agent_tools.py'
+    database_folder: './examples/customer_service/input/data'
+    database_validators: './examples/customer_service/input/validators/validators.py'
 
 dataset:
     num_samples: 10

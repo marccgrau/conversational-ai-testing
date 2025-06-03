@@ -1,0 +1,6 @@
+account_id,customer_id,account_type,currency,balance,status,opened_at,interest_rate,overdraft_limit
+ACC2001,CUS1001,checking,USD,3250.45,active,2016-08-23,0.01,1000
+ACC2002,CUS1001,savings,USD,15230.00,active,2017-03-10,0.35,0
+ACC2003,CUS1002,checking,USD,889.00,active,2012-02-11,0.01,500
+ACC2004,CUS1003,current,GBP,4175.60,active,2019-12-05,0.02,0
+ACC2005,CUS1004,private_account,CHF,215000.00,active,2005-07-19,0.05,0

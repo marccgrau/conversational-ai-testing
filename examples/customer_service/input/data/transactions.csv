@@ -1,0 +1,6 @@
+transaction_id,account_id,date,txn_type,description,amount,currency,balance_after,merchant_name,category,counterparty_account
+TX6001,ACC2001,2025-06-02,debit,Online Purchase,-45.89,USD,3204.56,Amazon,Retail,
+TX6002,ACC2001,2025-06-01,credit,Salary,3000.00,USD,3250.45,GreenTech Inc.,Income,
+TX6003,ACC2003,2025-05-30,debit,ATM Withdrawal,-200.00,USD,689.00,ATM Seattle,ATM,
+TX6004,ACC2004,2025-06-02,debit,Restaurant,-56.60,GBP,4119.00,Bao & Co,Food,
+TX6005,ACC2005,2025-05-28,credit,Investment Dividend,85.50,CHF,215085.50,Swiss Equity Fund,Income,

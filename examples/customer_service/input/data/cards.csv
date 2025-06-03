@@ -1,0 +1,5 @@
+card_id,customer_id,account_id,card_type,brand,pan_last_four,status,opened_at,expiry_date,credit_limit,available_credit
+CARD3001,CUS1001,ACC2001,debit,Visa,7447,active,2016-09-01,2028-08-31,,
+CARD3002,CUS1002,ACC2003,credit,Mastercard,9834,active,2014-07-15,2026-07-31,8000,3500
+CARD3003,CUS1003,ACC2004,debit,Visa,6621,active,2020-01-10,2027-01-31,,
+CARD3004,CUS1004,ACC2005,credit,Amex,1100,active,2006-02-01,2026-02-28,30000,27250

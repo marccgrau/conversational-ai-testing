@@ -1,0 +1,4 @@
+payment_id,loan_id,date,amount,principal_amount,interest_amount,method,status
+LPAY5001,LOAN4001,2025-05-01,325.20,275.00,50.20,auto_debit,posted
+LPAY5002,LOAN4002,2025-06-01,1480.50,740.00,740.50,wire,posted
+LPAY5003,LOAN4001,2025-06-01,325.20,276.10,49.10,auto_debit,posted

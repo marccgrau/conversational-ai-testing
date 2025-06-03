@@ -1,0 +1,5 @@
+customer_id,first_name,last_name,date_of_birth,street,city,state,zip,country,email,phone,kyc_status,customer_since,segment,risk_rating
+CUS1001,Emma,Johnson,1988-11-14,"42 Oak Avenue",Seattle,WA,98101,USA,emma.johnson@example.com,+12065550111,verified,2016-08-23,retail,low
+CUS1002,Liam,Martinez,1975-05-22,"8 River Road",Austin,TX,78730,USA,liam.martinez@example.com,+15125551333,verified,2012-02-11,retail,medium
+CUS1003,Sophia,Williams,1993-02-02,"12 Kensington Gardens",London,,SW7 4EX,UK,sophia.williams@example.co.uk,+447911123456,verified,2019-12-05,wealth,low
+CUS1004,Noah,Schneider,1969-09-18,"185 Bahnhofstrasse",Zurich,,8001,Switzerland,noah.schneider@example.ch,+41442002233,verified,2005-07-19,private,medium
