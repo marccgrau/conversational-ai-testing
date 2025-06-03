@@ -8,33 +8,33 @@ environment:
             type: 'openai'
             name: 'gpt-4o'
         extraction_prompt:
-            prompt_hub_name: 'eladlev/task_extraction'
+            prompt_hub_name: 'marccgrau/task_extraction'
 
 description_generator:
     flow_config:
         prompt:
-            prompt_hub_name: 'eladlev/flows_extraction'
+            prompt_hub_name: 'marccgrau/flows_extraction'
     policies_config:
         prompt:
-            prompt_hub_name: 'eladlev/policies_extraction'
+            prompt_hub_name: 'marccgrau/policies_extraction'
         num_workers: 3
         timeout: 20 # in seconds
     edge_config:
         prompt:
-            prompt_hub_name: 'eladlev/policies_graph'
+            prompt_hub_name: 'marccgrau/policies_graph'
         num_workers: 5
         timeout: 20 # in seconds
     description_config:
         prompt:
-            prompt_hub_name: 'eladlev/description_generation:c7ecf9ea'
+            prompt_hub_name: 'marccgrau/description_generation'
         num_workers: 3
         timeout: 40 # in seconds
     refinement_config:
         do_refinement: False # If you don't want to refine the expected behaviour of the descriptions, set this to False
         prompt_feedback:
-            prompt_hub_name: 'eladlev/description_refinement'
+            prompt_hub_name: 'marccgrau/description_refinement'
         prompt_refinement:
-            prompt_hub_name: 'eladlev/refined_description2'
+            prompt_hub_name: 'marccgrau/refined_description'
         num_workers: 3
         timeout: 20 # in seconds
     llm_policy:
@@ -53,12 +53,12 @@ description_generator:
 event_generator:
     symbolic_enrichment_config:
         prompt:
-            prompt_hub_name: 'eladlev/event_symbolic'
+            prompt_hub_name: 'marccgrau/event_symbolic'
         num_workers: 3
         timeout: 40 # in seconds
     symbolic_constraints_config:
         prompt:
-            prompt_hub_name: 'eladlev/symbolic_prompt_constraints'
+            prompt_hub_name: 'marccgrau/symbolic_prompt_constraints'
         num_workers: 3
         timeout: 40 # in seconds
     event_graph:
@@ -66,11 +66,11 @@ event_generator:
             type: 'openai'
             name: 'gpt-4o'
         prompt_restrictions:
-            prompt_hub_name: 'eladlev/filter_restrictions'
+            prompt_hub_name: 'marccgrau/filter_restrictions'
         prompt_final_res:
-            prompt_hub_name: 'eladlev/event_final'
+            prompt_hub_name: 'marccgrau/event_final'
         prompt_executors:
-            prompt_hub_name: 'eladlev/event_executor'
+            prompt_hub_name: 'marccgrau/event_executor'
         num_workers: 3
         timeout: 180 # in seconds
 
@@ -79,10 +79,10 @@ dialog_manager:
     user_parsing_mode: 'thought' # 'thought' in case the user has thought part or 'default'
     memory_path: "memory.db"
     user_prompt:
-        prompt_hub_name: 'eladlev/user_sim'
+        prompt_hub_name: 'marccgrau/user_sim'
     critique_config:
         prompt:
-            prompt_hub_name: 'eladlev/end_critique'
+            prompt_hub_name: 'marccgrau/end_critique'
         llm:
             type: 'openai'
             name: 'gpt-4o'
@@ -100,7 +100,7 @@ dialog_manager:
 
 analysis:
     prompt:
-        prompt_hub_name: 'eladlev/analysis_info'
+        prompt_hub_name: 'marccgrau/analysis_info'
     llm:
         type: 'openai'
         name: 'gpt-4o'

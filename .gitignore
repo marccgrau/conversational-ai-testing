@@ -16,3 +16,7 @@ config/config_airline_gemini.yml
 config/config_education.yml
 config/config_retail.yml
 **llm_env.yml**
+
+# Results
+results
+
