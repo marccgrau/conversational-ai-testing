@@ -73,6 +73,9 @@ event_generator:
             prompt_hub_name: 'marccgrau/event_executor'
         num_workers: 2
         timeout: 300 # in seconds
+    event_planner
+        prompt_generator:
+            prompt_hub_name: 'marccgrau/prompt_planner_generator'
 
 
 dialog_manager:

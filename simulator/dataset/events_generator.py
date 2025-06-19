@@ -104,7 +104,7 @@ class EventsGenerator:
         return tool_function, add_row_input
 
     def get_planner_prompt(self):
-        prompt = hub.pull("eladlev/planner_event_generator")
+        prompt = self.config["event_planner"]["prompt_generator"]["prompt_hub_name"]
         return prompt.partial(tables_info=dict_to_str(self.env.data_schema))
 
     def init_agent(self):
