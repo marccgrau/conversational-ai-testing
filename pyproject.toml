@@ -19,4 +19,5 @@ dependencies = [
     "plotly==5.24.1",
     "langchain-google-genai==2.0.7",
     "ruff>=0.11.12",
+    "langchain-anthropic>=0.2.4",
 ]

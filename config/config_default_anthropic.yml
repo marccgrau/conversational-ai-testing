@@ -5,8 +5,8 @@ environment:
     database_validators: ''
     task_description:  # If you don't want to infer you can simply provide it in the field 'content'
         llm:
-            type: 'openai'
-            name: 'gpt-4.1'
+            type: 'anthropic'
+            name: 'claude-3-5-sonnet-20241022'
         extraction_prompt:
             prompt_hub_name: 'marccgrau/task_extraction'
 
@@ -38,17 +38,17 @@ description_generator:
         num_workers: 2
         timeout: 300 # in seconds
     llm_policy:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
     llm_edge:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
     llm_description:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
     llm_refinement:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
 
 event_generator:
     symbolic_enrichment_config:
@@ -63,8 +63,8 @@ event_generator:
         timeout: 300 # in seconds
     event_graph:
         llm:
-            type: 'openai'
-            name: 'gpt-4.1'
+            type: 'anthropic'
+            name: 'claude-3-5-sonnet-20241022'
         prompt_restrictions:
             prompt_hub_name: 'marccgrau/filter_restrictions'
         prompt_final_res:
@@ -84,14 +84,14 @@ dialog_manager:
         prompt:
             prompt_hub_name: 'marccgrau/end_critique'
         llm:
-            type: 'openai'
-            name: 'gpt-4.1'
+            type: 'anthropic'
+            name: 'claude-3-5-sonnet-20241022'
     llm_user:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
     llm_chat:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
     num_workers: 2
     timeout: 300 # in seconds
     mini_batch_size: 10
@@ -102,8 +102,8 @@ analysis:
     prompt:
         prompt_hub_name: 'marccgrau/analysis_info'
     llm:
-        type: 'openai'
-        name: 'gpt-4.1'
+        type: 'anthropic'
+        name: 'claude-3-5-sonnet-20241022'
     num_workers: 2
     timeout: 300 # in seconds
 

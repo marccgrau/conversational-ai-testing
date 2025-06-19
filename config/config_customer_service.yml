@@ -5,8 +5,8 @@ environment:
     database_validators: './examples/customer_service/input/validators/validators.py'
 
 dataset:
-    num_samples: 10
-    cost_limit: 3 #In dollars
+    num_samples: 25
+    cost_limit: 5 #In dollars
 
 dialog_manager:
-    cost_limit: 3 
+    cost_limit: 5

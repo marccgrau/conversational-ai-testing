@@ -240,6 +240,7 @@ dependencies = [
     { name = "anthropic", extra = ["vertex"] },
     { name = "google-cloud-aiplatform" },
     { name = "langchain" },
+    { name = "langchain-anthropic" },
     { name = "langchain-community" },
     { name = "langchain-core" },
     { name = "langchain-google-genai" },
@@ -258,6 +259,7 @@ requires-dist = [
     { name = "anthropic", extras = ["vertex"], specifier = "==0.42.0" },
     { name = "google-cloud-aiplatform", specifier = "==1.75.0" },
     { name = "langchain", specifier = "==0.3.7" },
+    { name = "langchain-anthropic", specifier = ">=0.2.4" },
     { name = "langchain-community", specifier = "==0.3.5" },
     { name = "langchain-core", specifier = "==0.3.15" },
     { name = "langchain-google-genai", specifier = "==2.0.7" },
@@ -282,6 +284,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/64/a4/f71d9cf3a5ac257c993b5ca3f93df5f7fb395c725e7f1e6479d2514173c3/dataclasses_json-0.6.7.tar.gz", hash = "sha256:b6b3e528266ea45b9535223bc53ca645f5208833c29229e847b3f26a1cc55fc0", size = 32227 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c3/be/d0d44e092656fe7a06b55e6103cbce807cdbdee17884a5367c68c9860853/dataclasses_json-0.6.7-py3-none-any.whl", hash = "sha256:0dbf33f26c8d5305befd61b39d2b3414e8a407bedc2834dea9b8d642666fb40a", size = 28686 },
+]
+
+[[package]]
+name = "defusedxml"
+version = "0.7.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0f/d5/c66da9b79e5bdb124974bfe172b4daf3c984ebd9c2a06e2b8a4dc7331c72/defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69", size = 75520 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl", hash = "sha256:a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61", size = 25604 },
 ]
 
 [[package]]
@@ -913,6 +924,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/82/59/1ce98c59890fbdbf865510fc6821c9f4d2455ca065b11e7aaa8635239b92/langchain-0.3.7.tar.gz", hash = "sha256:2e4f83bf794ba38562f7ba0ede8171d7e28a583c0cec6f8595cfe72147d336b2", size = 416796 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/49/09/72630413a7ded27684e33392a0ff52ff1c8ea6749fee641319e75f82072b/langchain-0.3.7-py3-none-any.whl", hash = "sha256:cf4af1d5751dacdc278df3de1ff3cbbd8ca7eb55d39deadccdd7fb3d3ee02ac0", size = 1005562 },
+]
+
+[[package]]
+name = "langchain-anthropic"
+version = "0.2.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "anthropic" },
+    { name = "defusedxml" },
+    { name = "langchain-core" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/9e/97/741781ad1eecc65bdfd5adaea0cf9b42a732dad83a8cec70724cebc8da87/langchain_anthropic-0.2.4.tar.gz", hash = "sha256:0382d4c7b5236839b703f7b72b3e06de4bb5be99104b193f719adbe34c49562b", size = 20303 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d6/7d/6109b1d5a50db57540378cf9c9600c77b67d23d3df778cdb4e16f4a2dd82/langchain_anthropic-0.2.4-py3-none-any.whl", hash = "sha256:bcb6c2d0df4a67aff52816621079d6e743b260911caccf313a72b33b7edece6f", size = 21801 },
 ]
 
 [[package]]
